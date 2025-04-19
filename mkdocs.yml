@@ -1,0 +1,128 @@
+site_name: Aman's Notes
+site_url: https://sitename.example
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  icon:
+    logo: fontawesome/solid/a
+  # favicon: fontawesome/solid/a
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - navigation.expand
+    - navigation.sections
+    - navigation.tracking
+    - navigation.footer
+    - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    # - toc.integrate
+    - toc.follow
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+      
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: indigo
+      accent: indigo
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: black
+      accent: indigo
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+
+not_in_nav: |
+  /tutorials/**/*.md
+  How_to_Use.md
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  # - mkdocs-git-revision-date-localized-plugin:
+  #     type: datetime
+  #     locale: en_US
+  #     fallback_to_build_date: true
+  #     include_git_commit: true
+  # - mkdocs-material-extensions:
+  #     search_index: true
+  #     search_index_only: false
+  - blog: 
+      blog_dir: ./blog
+      archive_date_format: yyyy
+      archive_url_date_format: yyyy
+      archive_toc: false
+      post_url_format: "{slug}"
+  # - git-committers:
+  #     enabled: true
+  #     repository: amanag7/Notes
+  #     branch: main
+  #     token: !ENV GITHUB_TOKEN
+  #     commit_message: "Updated by GitHub Actions"
+  - git-revision-date-localized:
+      type: datetime
+      locale: en_US
+      fallback_to_build_date: false
+      enabled: false
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/amanag7
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/aman-agrawal-linkedout/
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/Sparsh_Aman
+
+copyright: Copyright &copy; 2025 Aman Agrawal

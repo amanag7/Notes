@@ -1,0 +1,14 @@
+authors:
+  aman:
+    name: Aman Agrawal
+    description: Software Engineer | Python Developer | Open Source Contributor
+    # avatar: fontawesome/brands/github-alt
+    # bio: |
+    #   Aman is a passionate software engineer with a keen interest in python development and open-source contributions. He enjoys exploring new technologies and sharing his knowledge through writing and tutorials.
+    # email: aman.agrawal0628@gmail.com
+    # github: https://github.com/amanag7
+    # linkedin: https://www.linkedin.com/in/aman-agrawal-linkedout/
+  squidfunk:
+    name: Martin Donath
+    description: Creator of Material for MkDocs
+    avatar: https://github.com/squidfunk.png
